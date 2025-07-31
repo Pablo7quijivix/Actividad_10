@@ -21,10 +21,13 @@ for i in range(cantidad_productos):
 print(f"\n========lista/Inventario de productos Registrados======= ")
 #data es la variable temporal que recorrera los valores de las claves
 for codigo, data in producto_nuevo.items():
+    for i in range (cantidad_productos):
+        print(f"\nProducto no.{i+1}")
     print(f"\nCodigo: {codigo}")
     print(f"Nombre: {data['nombre']}")
     print(f"Categoria: {data['categoria']}")
     print(f"Talla: {data['talla']}")
     print(f"Precion unitario: {data['precio_unitario']}")
+    print(f"Cantidad en stock: {data['cantidad_stock']}")
 
 
